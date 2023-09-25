@@ -1,11 +1,10 @@
-// Exporting the function as required
 export default function taskBlock(trueOrFalse) {
-  const task = false; // Using let instead of var
-  const task2 = true; // Using let instead of var
+  const task = false;
+  const task2 = true;
 
   if (trueOrFalse) {
-    const task = true; // Using let inside the block
-    const task2 = false; // Using let inside the block
+    const task = true;
+    const task2 = false;
   }
 
   return [task, task2];
