@@ -8,18 +8,22 @@ export default class Airport {
   get name() {
     return this._name;
   }
+
   // Setter for name
   set name(value) {
     this._name = value;
   }
+
   // Getter for code
   get code() {
     return this._code;
   }
+
   // Setter for code
   set code(value) {
     this._code = value;
   }
+
   get [Symbol.toStringTag]() {
     return this._code;
   }
