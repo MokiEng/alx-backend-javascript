@@ -37,7 +37,7 @@ export default class HolbertonCourse {
 
   // Helper method to validate a string attribute
   validateString(value, attributeName) {
-    if (typeof this._value !== 'string') {
+    if (typeof value !== 'string') {
       throw new TypeError(`${attributeName} must be a string`);
     }
     return value;
@@ -45,7 +45,7 @@ export default class HolbertonCourse {
 
   // Helper method to validate a number attribute
   validateNumber(value, attributeName) {
-    if (typeof this._value !== 'number') {
+    if (typeof value !== 'number') {
       throw new TypeError(`${attributeName} must be a number`);
     }
     return value;
@@ -53,9 +53,9 @@ export default class HolbertonCourse {
 
   // Helper method to validate the students attribute
   validateStudents(value) {
-    if (!Array.isArray(this._value) || !this._value.every((item => typeof item === 'string')) {
+    if (!Array.isArray(value) || !value.every(item => typeof item === 'string')) {
       throw new TypeError('Students must be an array of strings');
-    })
+    }
     return value;
   }
 }
