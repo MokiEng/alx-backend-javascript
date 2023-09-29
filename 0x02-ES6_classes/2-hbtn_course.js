@@ -53,9 +53,9 @@ export default class HolbertonCourse {
 
   // Helper method to validate the students attribute
   validateStudents(value) {
-    if (!Array.isArray(this._value) || !this._value.every(item => typeof item === 'string')) {
+    if (!Array.isArray(this._value) || !this._value.every((item => typeof item === 'string')) {
       throw new TypeError('Students must be an array of strings');
-    }
+    })
     return value;
   }
 }
