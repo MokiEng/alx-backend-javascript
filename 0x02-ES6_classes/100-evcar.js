@@ -7,7 +7,7 @@ export default class EVCar extends Car {
   }
 
   cloneCar() {
-    const car = new Car(this._brand, this._motor, this._color);
-    return new Car();
+    // Use 'this' to create a new instance of Car with the same attributes
+    return new Car(this._brand, this._motor, this._color);
   }
 }
