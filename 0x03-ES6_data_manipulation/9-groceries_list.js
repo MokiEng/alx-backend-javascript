@@ -1,6 +1,6 @@
 export default function groceriesList() {
   const groceryItems = new Map();
-  
+
   // Add grocery items to the Map
   groceryItems.set('Apples', 10);
   groceryItems.set('Tomatoes', 10);
