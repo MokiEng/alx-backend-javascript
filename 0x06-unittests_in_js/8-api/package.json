@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MokiEng/alx-backend-javascript"
+    "url": ""
   },
   "bugs": {
     "url": ""
@@ -29,6 +29,5 @@
   "engines": {
     "node": "16.x",
     "npm": "8.x",
-    "yarn": "1.x"
   }
 }
